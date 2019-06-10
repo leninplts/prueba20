@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+	<div id="app" class="container mt-5">
+		<div :class="['p-3','text-white', fondo]">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae enim, ipsam in molestiae ex ad, ab tempora nesciunt amet tempore omnis, totam debitis. Cupiditate iste quas vel quo laborum voluptas.</p>
+		</div>
+		<input type="text" class="form-control" v-model="fondo">
+		<div class="text-white p-3" :class="{'bg-info':color,'bg-success':!color}">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque aliquam, eligendi saepe tempora alias inventore autem deserunt. Quibusdam assumenda totam amet iusto debitis, labore ea. Odit consequuntur possimus molestiae dolorum!
+		</div>
+		<button class="btn btn-primary" @click="color=!color">Cambiar</button>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
